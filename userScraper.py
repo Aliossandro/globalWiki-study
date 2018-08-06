@@ -2,6 +2,7 @@ import urllib
 from bs4 import BeautifulSoup
 import pandas as pd
 import os
+import sys
 
 #specify url
 # userList = ['Harmonia Amanda', 'Jura1', 'Sannita', 'Alessandro Piscopo', 'TomT0m', 'GerardM']
@@ -92,13 +93,22 @@ def userDataset(userList):
     else:
         userData.to_csv('userDataWM.csv', index=False, header=True)
 
+def fileOpener(fName):
+    with open(fName, 'r') as f:
+        x = f.readlines()
+    x = [i.replace('\n', '') for i in x]
+    return x
+
 def main():
     # other_path = '/Users/alessandro/Documents/PhD/WD_ontology'
+    userFile = sys.argv[1]
     other_path = '/data/wpDumps'
     other_file = other_path + '/userRoles.csv'
+    userAll = fileOpener(userFile)
     userRoles = pd.read_csv(other_file)
     userList = list(userRoles['username'])
-    userDataset(userList)
+    userAll = set(userAll) - set(userList)
+    userDataset(userAll)
 
 
 if __name__ == "__main__":
