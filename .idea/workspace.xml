@@ -25,12 +25,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="545" />
-          <entry key="py" value="1441" />
+          <entry key="py" value="1452" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1004" />
+          <entry key="Python" value="1015" />
           <entry key="Scratch" value="982" />
         </counts>
       </usages-collector>
@@ -52,11 +52,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/userScraper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1870">
-              <caret line="110" column="20" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
+            <state relative-caret-position="-619">
+              <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1533565360563" expanded="true" signature="4526:4640" ph="..." />
+                <marker date="1533565654686" expanded="true" signature="4550:4664" ph="..." />
               </folding>
             </state>
           </provider>
@@ -239,11 +239,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/userScraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1870">
-          <caret line="110" column="20" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
+        <state relative-caret-position="-619">
+          <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1533565360563" expanded="true" signature="4526:4640" ph="..." />
+            <marker date="1533565654686" expanded="true" signature="4550:4664" ph="..." />
           </folding>
         </state>
       </provider>

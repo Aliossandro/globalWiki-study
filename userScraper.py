@@ -49,7 +49,7 @@ def userDataset(userList):
             tempDf['user_name'] = user
             userData = userData.append(tempDf)
             if counter == 2500:
-                if os.path.isfile('./userDataWM.csv'):
+                if os.path.isfile('./userDataWM_new.csv'):
                     #clean the data
                     userData['edit_count'] = userData['edit_count'].str.replace(',', '')
                     userData['edit_count'] = userData['edit_count'].astype(int)
@@ -59,7 +59,7 @@ def userDataset(userList):
                     userData['local_wiki'] = userData['local_wiki'].str.replace('.org', '')
                     userData['language'], userData['project'] = userData['local_wiki'].str.split('.', 1).str
 
-                    userData.to_csv('userDataWM.csv', mode='a', index=False, header=False)
+                    userData.to_csv('userDataWM_new.csv', mode='a', index=False, header=False)
                     userData = pd.DataFrame(columns=['user_name', 'local_wiki','attached_on', 'method', 'blocked', 'edit_count', 'groups'])
                     counter = 0
                 else:
@@ -72,7 +72,7 @@ def userDataset(userList):
                     userData['local_wiki'] = userData['local_wiki'].str.replace('.org', '')
                     userData['language'], userData['project'] = userData['local_wiki'].str.split('.', 1).str
 
-                    userData.to_csv('userDataWM.csv', index=False, header=True)
+                    userData.to_csv('userDataWM_new.csv', index=False, header=True)
                     userData = pd.DataFrame(columns=['user_name', 'local_wiki','attached_on', 'method', 'blocked', 'edit_count', 'groups'])
                     counter = 0
         except:
@@ -88,10 +88,10 @@ def userDataset(userList):
     userData['local_wiki'] = userData['local_wiki'].str.replace('.org', '')
     userData['language'], userData['project'] = userData['local_wiki'].str.split('.', 1).str
 
-    if os.path.isfile('./userDataWM.csv'):
-        userData.to_csv('userDataWM.csv', mode='a', index=False, header=False)
+    if os.path.isfile('./userDataWM_new.csv'):
+        userData.to_csv('userDataWM_new.csv', mode='a', index=False, header=False)
     else:
-        userData.to_csv('userDataWM.csv', index=False, header=True)
+        userData.to_csv('userDataWM_new.csv', index=False, header=True)
 
 def fileOpener(fName):
     with open(fName, 'r') as f:
