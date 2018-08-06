@@ -24,7 +24,11 @@ class userGetter:
         if nextLink:
             newLink = nextLink.get('href')
             print(newLink)
-            self.globalUserExtractor(newLink)
+            try:
+                self.globalUserExtractor(newLink)
+            except RecursionError:
+                print(newLink)
+                self.fileWriter()
 
 
     def globalUserExtractor(self, startLink):
@@ -37,13 +41,16 @@ class userGetter:
             item = li.find('a')
             try:
                 self.accountList.append(item.get('href').replace('/wiki/Special:CentralAuth/', ''))
+                if len(self.accountList) >= 500000:
+                    self.fileWriter()
+                    self.accountList = []
             except AttributeError:
                 print(item)
 
         self.pageNavigator(startLink)
 
     def fileWriter(self):
-        with open('globalUserList.txt', 'w') as f:
+        with open('globalUserList.txt', 'a+') as f:
             for user in self.accountList:
                 f.write("%s\n" % user)
             f.close()
