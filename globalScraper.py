@@ -91,7 +91,8 @@ class userGetter:
 def main():
     # other_path = '/Users/alessandro/Documents/PhD/WD_ontology'
     # startLink = '/w/index.php?title=Special:GlobalUsers&offset=&limit=5000'
-    startLink = '/w/index.php?title=Special:GlobalUsers&offset=Ag2solo&limit=5000'
+    # startLink = '/w/index.php?title=Special:GlobalUsers&offset=Ag2solo&limit=5000'
+    startLink = '/w/index.php?title=Special:GlobalUsers&offset=Antonio+La+Puente&limit=5000'
 
     userGetter(startLink)
 

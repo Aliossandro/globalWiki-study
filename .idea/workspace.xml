@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34752d34-ba68-4a94-8365-a6866e8a0112" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/userScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/userScraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/globalScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/globalScraper.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,13 +25,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="545" />
-          <entry key="py" value="1452" />
+          <entry key="py" value="1470" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1015" />
-          <entry key="Scratch" value="982" />
+          <entry key="Python" value="1032" />
+          <entry key="Scratch" value="983" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -49,7 +49,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/userScraper.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-619">
@@ -77,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/globalAccountScraper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="35" selection-end-line="57" />
+            <state relative-caret-position="306">
+              <caret line="51" column="75" lean-forward="true" selection-start-line="51" selection-start-column="75" selection-end-line="51" selection-end-column="75" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
                 <marker date="1533491130043" expanded="true" signature="362:763" ph="..." />
@@ -87,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/globalScraper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-425">
-              <caret line="51" column="37" lean-forward="true" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+            <state relative-caret-position="340">
+              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -120,9 +120,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_14.py" />
+        <option value="$PROJECT_DIR$/userScraper.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/globalAccountScraper.py" />
         <option value="$PROJECT_DIR$/globalScraper.py" />
-        <option value="$PROJECT_DIR$/userScraper.py" />
       </list>
     </option>
   </component>
@@ -216,27 +216,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/globalScraper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="51" column="37" lean-forward="true" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/globalAccountScraper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="35" selection-end-line="57" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1533491130043" expanded="true" signature="362:763" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/userScraper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-619">
@@ -244,6 +223,27 @@
           <folding>
             <element signature="e#0#13#0" expanded="true" />
             <marker date="1533565654686" expanded="true" signature="4550:4664" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/globalAccountScraper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="51" column="75" lean-forward="true" selection-start-line="51" selection-start-column="75" selection-end-line="51" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1533491130043" expanded="true" signature="362:763" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/globalScraper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
