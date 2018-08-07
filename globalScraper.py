@@ -62,15 +62,20 @@ class userGetter:
             soup = BeautifulSoup(page, 'html.parser')
             name_box = soup.find('ul')
 
-            for li in name_box:
-                item = li.find('a')
-                try:
-                    self.accountList.append(item.get('href').replace('/wiki/Special:CentralAuth/', ''))
-                    if len(self.accountList) >= 500000:
-                        self.fileWriter()
-                        self.accountList = []
-                except AttributeError:
-                    print(item)
+            if name_box is not None:
+                for li in name_box:
+                    item = li.find('a')
+                    try:
+                        self.accountList.append(item.get('href').replace('/wiki/Special:CentralAuth/', ''))
+                        if len(self.accountList) >= 500000:
+                            self.fileWriter()
+                            self.accountList = []
+                    except AttributeError:
+                        print(item)
+            else:
+                print(startLink)
+                self.fileWriter()
+                self.accountList = []
 
             self.pageNavigator(startLink)
 
