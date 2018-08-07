@@ -36,7 +36,7 @@ class userGetter:
             page = e.partial
             print(page)
 
-            time.sleep(360)
+            time.sleep(480)
             page = urllib.request.urlopen(self.baseUrl + startLink)
             # parse the html using beautiful soup and store in variable `soup`
             soup = BeautifulSoup(page, 'html.parser')
