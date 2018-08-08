@@ -84,6 +84,11 @@ class userGetter:
             page = e.partial
             print(page)
             self.fileWriter()
+        except (urllib.error.HTTPError) as e:
+            print(e)
+            page = e.partial
+            print(page)
+            self.fileWriter()
         except ConnectionResetError:
             print(startLink)
             self.fileWriter()
