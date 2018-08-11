@@ -81,13 +81,14 @@ class userGetter:
 
         except (http.client.IncompleteRead) as e:
             print(e)
-            page = e.partial
-            print(page)
+            # page = e.partial
+            print(startLink)
             self.fileWriter()
+
         except (urllib.error.HTTPError) as e:
             print(e)
-            page = e.partial
-            print(page)
+            # page = e.partial
+            print(startLink)
             self.fileWriter()
         except ConnectionResetError:
             print(startLink)
@@ -107,7 +108,8 @@ def main():
     # startLink = '/w/index.php?title=Special:GlobalUsers&offset=&limit=5000'
     # startLink = '/w/index.php?title=Special:GlobalUsers&offset=Ag2solo&limit=5000'
     # startLink = '/w/index.php?title=Special:GlobalUsers&offset=Arsh_Masroofi&limit=5000'
-    startLink = '/w/index.php?title=Special:GlobalUsers&offset=Bmemma&limit=5000'
+    #startLink = '/w/index.php?title=Special:GlobalUsers&offset=Bmemma&limit=5000'
+    startLink = '/w/index.php?title=Special:GlobalUsers&offset=Ckom9000&limit=5000'
 
     userGetter(startLink)
 
